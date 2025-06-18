@@ -118,24 +118,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyEngine
+# Target rules for targets named STG
 
 # Build rule for target.
-MyEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyEngine
-.PHONY : MyEngine
+STG: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 STG
+.PHONY : STG
 
 # fast build rule for target.
-MyEngine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/build
-.PHONY : MyEngine/fast
+STG/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/build
+.PHONY : STG/fast
 
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
 # target to build an object file
 src/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/Game.cpp.o
 .PHONY : src/Game.cpp.o
 
 src/Game.i: src/Game.cpp.i
@@ -143,7 +143,7 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
 src/Game.s: src/Game.cpp.s
@@ -151,7 +151,7 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
 src/core/Application.o: src/core/Application.cpp.o
@@ -159,7 +159,7 @@ src/core/Application.o: src/core/Application.cpp.o
 
 # target to build an object file
 src/core/Application.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/core/Application.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/core/Application.cpp.o
 .PHONY : src/core/Application.cpp.o
 
 src/core/Application.i: src/core/Application.cpp.i
@@ -167,7 +167,7 @@ src/core/Application.i: src/core/Application.cpp.i
 
 # target to preprocess a source file
 src/core/Application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/core/Application.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/core/Application.cpp.i
 .PHONY : src/core/Application.cpp.i
 
 src/core/Application.s: src/core/Application.cpp.s
@@ -175,7 +175,7 @@ src/core/Application.s: src/core/Application.cpp.s
 
 # target to generate assembly for a file
 src/core/Application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/core/Application.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/core/Application.cpp.s
 .PHONY : src/core/Application.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -183,7 +183,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -191,7 +191,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -199,7 +199,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/scene/GameScene.o: src/scene/GameScene.cpp.o
@@ -207,7 +207,7 @@ src/scene/GameScene.o: src/scene/GameScene.cpp.o
 
 # target to build an object file
 src/scene/GameScene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/GameScene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/GameScene.cpp.o
 .PHONY : src/scene/GameScene.cpp.o
 
 src/scene/GameScene.i: src/scene/GameScene.cpp.i
@@ -215,7 +215,7 @@ src/scene/GameScene.i: src/scene/GameScene.cpp.i
 
 # target to preprocess a source file
 src/scene/GameScene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/GameScene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/GameScene.cpp.i
 .PHONY : src/scene/GameScene.cpp.i
 
 src/scene/GameScene.s: src/scene/GameScene.cpp.s
@@ -223,7 +223,7 @@ src/scene/GameScene.s: src/scene/GameScene.cpp.s
 
 # target to generate assembly for a file
 src/scene/GameScene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/GameScene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/GameScene.cpp.s
 .PHONY : src/scene/GameScene.cpp.s
 
 src/scene/Scene.o: src/scene/Scene.cpp.o
@@ -231,7 +231,7 @@ src/scene/Scene.o: src/scene/Scene.cpp.o
 
 # target to build an object file
 src/scene/Scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/Scene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/Scene.cpp.o
 .PHONY : src/scene/Scene.cpp.o
 
 src/scene/Scene.i: src/scene/Scene.cpp.i
@@ -239,7 +239,7 @@ src/scene/Scene.i: src/scene/Scene.cpp.i
 
 # target to preprocess a source file
 src/scene/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/Scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/Scene.cpp.i
 .PHONY : src/scene/Scene.cpp.i
 
 src/scene/Scene.s: src/scene/Scene.cpp.s
@@ -247,7 +247,7 @@ src/scene/Scene.s: src/scene/Scene.cpp.s
 
 # target to generate assembly for a file
 src/scene/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/Scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/Scene.cpp.s
 .PHONY : src/scene/Scene.cpp.s
 
 src/scene/SceneManager.o: src/scene/SceneManager.cpp.o
@@ -255,7 +255,7 @@ src/scene/SceneManager.o: src/scene/SceneManager.cpp.o
 
 # target to build an object file
 src/scene/SceneManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/SceneManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o
 .PHONY : src/scene/SceneManager.cpp.o
 
 src/scene/SceneManager.i: src/scene/SceneManager.cpp.i
@@ -263,7 +263,7 @@ src/scene/SceneManager.i: src/scene/SceneManager.cpp.i
 
 # target to preprocess a source file
 src/scene/SceneManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/SceneManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/SceneManager.cpp.i
 .PHONY : src/scene/SceneManager.cpp.i
 
 src/scene/SceneManager.s: src/scene/SceneManager.cpp.s
@@ -271,7 +271,7 @@ src/scene/SceneManager.s: src/scene/SceneManager.cpp.s
 
 # target to generate assembly for a file
 src/scene/SceneManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/SceneManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/SceneManager.cpp.s
 .PHONY : src/scene/SceneManager.cpp.s
 
 src/scene/TitleScene.o: src/scene/TitleScene.cpp.o
@@ -279,7 +279,7 @@ src/scene/TitleScene.o: src/scene/TitleScene.cpp.o
 
 # target to build an object file
 src/scene/TitleScene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/TitleScene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o
 .PHONY : src/scene/TitleScene.cpp.o
 
 src/scene/TitleScene.i: src/scene/TitleScene.cpp.i
@@ -287,7 +287,7 @@ src/scene/TitleScene.i: src/scene/TitleScene.cpp.i
 
 # target to preprocess a source file
 src/scene/TitleScene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/TitleScene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/TitleScene.cpp.i
 .PHONY : src/scene/TitleScene.cpp.i
 
 src/scene/TitleScene.s: src/scene/TitleScene.cpp.s
@@ -295,7 +295,7 @@ src/scene/TitleScene.s: src/scene/TitleScene.cpp.s
 
 # target to generate assembly for a file
 src/scene/TitleScene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyEngine.dir/build.make CMakeFiles/MyEngine.dir/src/scene/TitleScene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/TitleScene.cpp.s
 .PHONY : src/scene/TitleScene.cpp.s
 
 # Help Target
@@ -306,7 +306,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyEngine"
+	@echo "... STG"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
