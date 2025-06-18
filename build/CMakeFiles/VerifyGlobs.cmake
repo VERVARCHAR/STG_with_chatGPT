@@ -5,9 +5,12 @@ cmake_policy(SET CMP0009 NEW)
 # SOURCES at CMakeLists.txt:16 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/yuto/sourse/STG/src/*.cpp")
 set(OLD_GLOB
-  "/home/yuto/sourse/STG/src/Game.cpp"
   "/home/yuto/sourse/STG/src/core/Application.cpp"
   "/home/yuto/sourse/STG/src/main.cpp"
+  "/home/yuto/sourse/STG/src/object/Bullet.cpp"
+  "/home/yuto/sourse/STG/src/object/Enemy.cpp"
+  "/home/yuto/sourse/STG/src/object/Player.cpp"
+  "/home/yuto/sourse/STG/src/scene/EnemySpawner.cpp"
   "/home/yuto/sourse/STG/src/scene/GameScene.cpp"
   "/home/yuto/sourse/STG/src/scene/Scene.cpp"
   "/home/yuto/sourse/STG/src/scene/SceneManager.cpp"

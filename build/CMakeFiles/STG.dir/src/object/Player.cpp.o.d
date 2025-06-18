@@ -1,7 +1,7 @@
-CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: \
- /home/yuto/sourse/STG/src/scene/GameScene.cpp /usr/include/stdc-predef.h \
- /home/yuto/sourse/STG/include/scene/GameScene.hpp \
- /home/yuto/sourse/STG/include/object/Enemy.hpp \
+CMakeFiles/STG.dir/src/object/Player.cpp.o: \
+ /home/yuto/sourse/STG/src/object/Player.cpp /usr/include/stdc-predef.h \
+ /home/yuto/sourse/STG/include/object/Player.hpp \
+ /home/yuto/sourse/STG/include/object/Bullet.hpp \
  /home/yuto/sourse/STG/include/object/GameObject.hpp \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
@@ -215,8 +215,6 @@ CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/yuto/sourse/STG/include/object/Player.hpp \
- /home/yuto/sourse/STG/include/object/Bullet.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \
@@ -321,11 +319,4 @@ CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/yuto/sourse/STG/include/scene/Scene.hpp \
- /home/yuto/sourse/STG/include/system/Logger.hpp \
- /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /home/yuto/sourse/STG/include/scene/EnemySpawner.hpp
+ /usr/include/c++/11/bits/erase_if.h

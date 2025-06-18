@@ -130,30 +130,6 @@ STG/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/build
 .PHONY : STG/fast
 
-src/Game.o: src/Game.cpp.o
-.PHONY : src/Game.o
-
-# target to build an object file
-src/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/Game.cpp.o
-.PHONY : src/Game.cpp.o
-
-src/Game.i: src/Game.cpp.i
-.PHONY : src/Game.i
-
-# target to preprocess a source file
-src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/Game.cpp.i
-.PHONY : src/Game.cpp.i
-
-src/Game.s: src/Game.cpp.s
-.PHONY : src/Game.s
-
-# target to generate assembly for a file
-src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/Game.cpp.s
-.PHONY : src/Game.cpp.s
-
 src/core/Application.o: src/core/Application.cpp.o
 .PHONY : src/core/Application.o
 
@@ -201,6 +177,102 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/object/Bullet.o: src/object/Bullet.cpp.o
+.PHONY : src/object/Bullet.o
+
+# target to build an object file
+src/object/Bullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Bullet.cpp.o
+.PHONY : src/object/Bullet.cpp.o
+
+src/object/Bullet.i: src/object/Bullet.cpp.i
+.PHONY : src/object/Bullet.i
+
+# target to preprocess a source file
+src/object/Bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Bullet.cpp.i
+.PHONY : src/object/Bullet.cpp.i
+
+src/object/Bullet.s: src/object/Bullet.cpp.s
+.PHONY : src/object/Bullet.s
+
+# target to generate assembly for a file
+src/object/Bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Bullet.cpp.s
+.PHONY : src/object/Bullet.cpp.s
+
+src/object/Enemy.o: src/object/Enemy.cpp.o
+.PHONY : src/object/Enemy.o
+
+# target to build an object file
+src/object/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Enemy.cpp.o
+.PHONY : src/object/Enemy.cpp.o
+
+src/object/Enemy.i: src/object/Enemy.cpp.i
+.PHONY : src/object/Enemy.i
+
+# target to preprocess a source file
+src/object/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Enemy.cpp.i
+.PHONY : src/object/Enemy.cpp.i
+
+src/object/Enemy.s: src/object/Enemy.cpp.s
+.PHONY : src/object/Enemy.s
+
+# target to generate assembly for a file
+src/object/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Enemy.cpp.s
+.PHONY : src/object/Enemy.cpp.s
+
+src/object/Player.o: src/object/Player.cpp.o
+.PHONY : src/object/Player.o
+
+# target to build an object file
+src/object/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Player.cpp.o
+.PHONY : src/object/Player.cpp.o
+
+src/object/Player.i: src/object/Player.cpp.i
+.PHONY : src/object/Player.i
+
+# target to preprocess a source file
+src/object/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Player.cpp.i
+.PHONY : src/object/Player.cpp.i
+
+src/object/Player.s: src/object/Player.cpp.s
+.PHONY : src/object/Player.s
+
+# target to generate assembly for a file
+src/object/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Player.cpp.s
+.PHONY : src/object/Player.cpp.s
+
+src/scene/EnemySpawner.o: src/scene/EnemySpawner.cpp.o
+.PHONY : src/scene/EnemySpawner.o
+
+# target to build an object file
+src/scene/EnemySpawner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o
+.PHONY : src/scene/EnemySpawner.cpp.o
+
+src/scene/EnemySpawner.i: src/scene/EnemySpawner.cpp.i
+.PHONY : src/scene/EnemySpawner.i
+
+# target to preprocess a source file
+src/scene/EnemySpawner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.i
+.PHONY : src/scene/EnemySpawner.cpp.i
+
+src/scene/EnemySpawner.s: src/scene/EnemySpawner.cpp.s
+.PHONY : src/scene/EnemySpawner.s
+
+# target to generate assembly for a file
+src/scene/EnemySpawner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.s
+.PHONY : src/scene/EnemySpawner.cpp.s
 
 src/scene/GameScene.o: src/scene/GameScene.cpp.o
 .PHONY : src/scene/GameScene.o
@@ -307,15 +379,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... STG"
-	@echo "... src/Game.o"
-	@echo "... src/Game.i"
-	@echo "... src/Game.s"
 	@echo "... src/core/Application.o"
 	@echo "... src/core/Application.i"
 	@echo "... src/core/Application.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/object/Bullet.o"
+	@echo "... src/object/Bullet.i"
+	@echo "... src/object/Bullet.s"
+	@echo "... src/object/Enemy.o"
+	@echo "... src/object/Enemy.i"
+	@echo "... src/object/Enemy.s"
+	@echo "... src/object/Player.o"
+	@echo "... src/object/Player.i"
+	@echo "... src/object/Player.s"
+	@echo "... src/scene/EnemySpawner.o"
+	@echo "... src/scene/EnemySpawner.i"
+	@echo "... src/scene/EnemySpawner.s"
 	@echo "... src/scene/GameScene.o"
 	@echo "... src/scene/GameScene.i"
 	@echo "... src/scene/GameScene.s"
