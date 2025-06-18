@@ -3,6 +3,7 @@
 #include "scene/SceneManager.hpp"
 #include "scene/TitleScene.hpp"
 #include "scene/GameScene.hpp"
+#include "system/Logger.hpp"
 
 #include <iostream>
 
@@ -56,19 +57,26 @@ void Application::run()
 
     sceneManager.changeScene(SceneID::TITLE);
 
+    float deltaTime = 0.016f; // 仮に1フレーム約60FPS前提で固定
+
     while (isRunning)
     {
-        sceneManager.update();
+        sceneManager.update(deltaTime, isRunning);
 
         auto ts = std::dynamic_pointer_cast<TitleScene>(sceneManager.getCurrentScene());
+        Logger::log("Entered TitleScene");
         if (ts && ts->requestStart)
         {
             sceneManager.changeScene(SceneID::GAME);
         }
 
-        sceneManager.draw();
+        sceneManager.draw(renderer);
+        SDL_RenderPresent(renderer);
+
         SDL_Delay(16);
     }
+
+    shutdown(); // これで SDL_Quit() が必ず呼ばれるように
 }
 
 void Application::shutdown()

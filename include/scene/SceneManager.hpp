@@ -16,9 +16,9 @@ enum class SceneID
 class SceneManager
 {
 public:
-    void changeScene(SceneID id); // シーン切り替え
-    void update();                // 現在シーンの更新
-    void draw();                  // 現在シーンの描画
+    void changeScene(SceneID id);                  // シーン切り替え
+    void update(float deltaTime, bool &isRunning); // 現在シーンの更新
+    void draw(SDL_Renderer *renderer);
 
     void registerScene(SceneID id, std::shared_ptr<Scene> scene);
     std::shared_ptr<Scene> getCurrentScene() const;

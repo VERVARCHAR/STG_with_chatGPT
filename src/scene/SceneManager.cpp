@@ -15,16 +15,16 @@ void SceneManager::changeScene(SceneID id)
         currentScene->onEnter();
 }
 
-void SceneManager::update()
+void SceneManager::update(float deltaTime, bool &isRunning)
 {
     if (currentScene)
-        currentScene->update();
+        currentScene->update(deltaTime, isRunning);
 }
 
-void SceneManager::draw()
+void SceneManager::draw(SDL_Renderer *renderer)
 {
     if (currentScene)
-        currentScene->draw();
+        currentScene->draw(renderer);
 }
 
 std::shared_ptr<Scene> SceneManager::getCurrentScene() const

@@ -1,14 +1,16 @@
 #ifndef SCENE_HPP
 #define SCENE_HPP
 
+#include <SDL2/SDL.h>
+
 class Scene
 {
 public:
     virtual ~Scene() = default;
-    virtual void onEnter() = 0; // シーンに入ったとき
-    virtual void onExit() = 0;  // シーンを離れるとき
-    virtual void update() = 0;  // 毎フレーム更新処理
-    virtual void draw() = 0;    // 毎フレーム描画処理
+    virtual void onEnter() = 0;
+    virtual void onExit() = 0;
+    virtual void update(float deltaTime, bool &isRunning) = 0;
+    virtual void draw(SDL_Renderer *renderer) = 0;
 };
 
 #endif

@@ -9,8 +9,8 @@ class TitleScene : public Scene
 public:
     void onEnter() override;
     void onExit() override;
-    void update() override;
-    void draw() override;
+    void update(float deltaTime, bool &isRunning) override;
+    void draw(SDL_Renderer *renderer) override;
 
     bool requestStart = false; // Enterで開始判定
 };

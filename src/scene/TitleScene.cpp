@@ -11,25 +11,31 @@ void TitleScene::onExit()
     std::cout << "Exited TitleScene" << std::endl;
 }
 
-void TitleScene::update()
+void TitleScene::update(float deltaTime, bool &isRunning)
 {
     SDL_Event event;
     while (SDL_PollEvent(&event))
     {
         if (event.type == SDL_QUIT)
         {
-            exit(0);
+            isRunning = false;
         }
-        if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_RETURN)
+        if (event.type == SDL_KEYDOWN)
         {
-            requestStart = true;
+            if (event.key.keysym.sym == SDLK_ESCAPE)
+            {
+                isRunning = false;
+            }
+            if (event.key.keysym.sym == SDLK_RETURN)
+            {
+                requestStart = true;
+            }
         }
     }
 }
 
-void TitleScene::draw()
+void TitleScene::draw(SDL_Renderer *renderer)
 {
-    // TitleScene：背景を暗めの青
-    SDL_SetRenderDrawColor(SDL_GetRenderer(SDL_GetWindowFromID(1)), 30, 30, 100, 255);
-    SDL_RenderClear(SDL_GetRenderer(SDL_GetWindowFromID(1)));
+    SDL_SetRenderDrawColor(renderer, 30, 30, 100, 255);
+    SDL_RenderClear(renderer);
 }
