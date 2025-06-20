@@ -221,6 +221,24 @@ STG_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 STG_SOURCE_DIR:STATIC=/home/yuto/sourse/STG
 
+//Value Computed by CMake
+STG_with_chatGPT_BINARY_DIR:STATIC=/home/yuto/sourse/STG/build
+
+//Value Computed by CMake
+STG_with_chatGPT_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+STG_with_chatGPT_SOURCE_DIR:STATIC=/home/yuto/sourse/STG
+
+//Value Computed by CMake
+stg_game_BINARY_DIR:STATIC=/home/yuto/sourse/STG/build
+
+//Value Computed by CMake
+stg_game_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+stg_game_SOURCE_DIR:STATIC=/home/yuto/sourse/STG
+
 
 ########################
 # INTERNAL cache entries

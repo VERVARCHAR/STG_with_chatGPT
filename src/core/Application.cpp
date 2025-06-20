@@ -55,28 +55,29 @@ void Application::run()
     sceneManager.registerScene(SceneID::TITLE, titleScene);
     sceneManager.registerScene(SceneID::GAME, gameScene);
 
+    titleScene->setSceneChangeCallback(
+        [&](SceneID id)
+        { sceneManager.changeScene(id); });
+    gameScene->setSceneChangeCallback(
+        [&](SceneID id)
+        { sceneManager.changeScene(id); });
+
     sceneManager.changeScene(SceneID::TITLE);
 
-    float deltaTime = 0.016f; // 仮に1フレーム約60FPS前提で固定
+    Uint32 lastTime = SDL_GetTicks();
+    isRunning = true;
 
     while (isRunning)
     {
+        Uint32 currentTime = SDL_GetTicks();
+        float deltaTime = (currentTime - lastTime) / 1000.0f; // 秒単位
+        lastTime = currentTime;
+
         sceneManager.update(deltaTime, isRunning);
-
-        auto ts = std::dynamic_pointer_cast<TitleScene>(sceneManager.getCurrentScene());
-        Logger::log("Entered TitleScene");
-        if (ts && ts->requestStart)
-        {
-            sceneManager.changeScene(SceneID::GAME);
-        }
-
         sceneManager.draw(renderer);
-        SDL_RenderPresent(renderer);
 
-        SDL_Delay(16);
+        SDL_Delay(1); // CPU負荷軽減（必要なら）
     }
-
-    shutdown(); // これで SDL_Quit() が必ず呼ばれるように
 }
 
 void Application::shutdown()

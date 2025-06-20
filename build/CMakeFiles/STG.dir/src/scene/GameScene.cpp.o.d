@@ -1,10 +1,9 @@
 CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: \
  /home/yuto/sourse/STG/src/scene/GameScene.cpp /usr/include/stdc-predef.h \
  /home/yuto/sourse/STG/include/scene/GameScene.hpp \
- /home/yuto/sourse/STG/include/object/Enemy.hpp \
- /home/yuto/sourse/STG/include/object/GameObject.hpp \
- /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
- /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
+ /home/yuto/sourse/STG/include/object/Enemy.hpp /usr/include/SDL2/SDL.h \
+ /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
+ /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -217,6 +216,7 @@ CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/yuto/sourse/STG/include/object/Player.hpp \
  /home/yuto/sourse/STG/include/object/Bullet.hpp \
+ /home/yuto/sourse/STG/include/object/GameObject.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \
@@ -328,4 +328,7 @@ CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/yuto/sourse/STG/include/scene/EnemySpawner.hpp
+ /home/yuto/sourse/STG/include/scene/EnemySpawnData.hpp \
+ /home/yuto/sourse/STG/include/scene/EnemySpawner.hpp \
+ /home/yuto/sourse/STG/include/object/EnemyFactory.hpp \
+ /home/yuto/sourse/STG/include/object/StraightEnemy.hpp

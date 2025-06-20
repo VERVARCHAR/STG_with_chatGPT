@@ -31,3 +31,8 @@ std::shared_ptr<Scene> SceneManager::getCurrentScene() const
 {
     return currentScene;
 }
+
+SceneID SceneManager::getCurrentID() const
+{
+    return currentID;
+}

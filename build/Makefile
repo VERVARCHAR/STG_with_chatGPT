@@ -113,7 +113,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/yuto/sourse/STG/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -226,6 +225,30 @@ src/object/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Enemy.cpp.s
 .PHONY : src/object/Enemy.cpp.s
 
+src/object/EnemyFactory.o: src/object/EnemyFactory.cpp.o
+.PHONY : src/object/EnemyFactory.o
+
+# target to build an object file
+src/object/EnemyFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o
+.PHONY : src/object/EnemyFactory.cpp.o
+
+src/object/EnemyFactory.i: src/object/EnemyFactory.cpp.i
+.PHONY : src/object/EnemyFactory.i
+
+# target to preprocess a source file
+src/object/EnemyFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.i
+.PHONY : src/object/EnemyFactory.cpp.i
+
+src/object/EnemyFactory.s: src/object/EnemyFactory.cpp.s
+.PHONY : src/object/EnemyFactory.s
+
+# target to generate assembly for a file
+src/object/EnemyFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.s
+.PHONY : src/object/EnemyFactory.cpp.s
+
 src/object/Player.o: src/object/Player.cpp.o
 .PHONY : src/object/Player.o
 
@@ -249,6 +272,54 @@ src/object/Player.s: src/object/Player.cpp.s
 src/object/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/Player.cpp.s
 .PHONY : src/object/Player.cpp.s
+
+src/object/SpiralEnemy.o: src/object/SpiralEnemy.cpp.o
+.PHONY : src/object/SpiralEnemy.o
+
+# target to build an object file
+src/object/SpiralEnemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o
+.PHONY : src/object/SpiralEnemy.cpp.o
+
+src/object/SpiralEnemy.i: src/object/SpiralEnemy.cpp.i
+.PHONY : src/object/SpiralEnemy.i
+
+# target to preprocess a source file
+src/object/SpiralEnemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.i
+.PHONY : src/object/SpiralEnemy.cpp.i
+
+src/object/SpiralEnemy.s: src/object/SpiralEnemy.cpp.s
+.PHONY : src/object/SpiralEnemy.s
+
+# target to generate assembly for a file
+src/object/SpiralEnemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.s
+.PHONY : src/object/SpiralEnemy.cpp.s
+
+src/object/StraightEnemy.o: src/object/StraightEnemy.cpp.o
+.PHONY : src/object/StraightEnemy.o
+
+# target to build an object file
+src/object/StraightEnemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o
+.PHONY : src/object/StraightEnemy.cpp.o
+
+src/object/StraightEnemy.i: src/object/StraightEnemy.cpp.i
+.PHONY : src/object/StraightEnemy.i
+
+# target to preprocess a source file
+src/object/StraightEnemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.i
+.PHONY : src/object/StraightEnemy.cpp.i
+
+src/object/StraightEnemy.s: src/object/StraightEnemy.cpp.s
+.PHONY : src/object/StraightEnemy.s
+
+# target to generate assembly for a file
+src/object/StraightEnemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.s
+.PHONY : src/object/StraightEnemy.cpp.s
 
 src/scene/EnemySpawner.o: src/scene/EnemySpawner.cpp.o
 .PHONY : src/scene/EnemySpawner.o
@@ -370,6 +441,30 @@ src/scene/TitleScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/scene/TitleScene.cpp.s
 .PHONY : src/scene/TitleScene.cpp.s
 
+src/system/StageLoader.o: src/system/StageLoader.cpp.o
+.PHONY : src/system/StageLoader.o
+
+# target to build an object file
+src/system/StageLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/system/StageLoader.cpp.o
+.PHONY : src/system/StageLoader.cpp.o
+
+src/system/StageLoader.i: src/system/StageLoader.cpp.i
+.PHONY : src/system/StageLoader.i
+
+# target to preprocess a source file
+src/system/StageLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/system/StageLoader.cpp.i
+.PHONY : src/system/StageLoader.cpp.i
+
+src/system/StageLoader.s: src/system/StageLoader.cpp.s
+.PHONY : src/system/StageLoader.s
+
+# target to generate assembly for a file
+src/system/StageLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/STG.dir/build.make CMakeFiles/STG.dir/src/system/StageLoader.cpp.s
+.PHONY : src/system/StageLoader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -391,9 +486,18 @@ help:
 	@echo "... src/object/Enemy.o"
 	@echo "... src/object/Enemy.i"
 	@echo "... src/object/Enemy.s"
+	@echo "... src/object/EnemyFactory.o"
+	@echo "... src/object/EnemyFactory.i"
+	@echo "... src/object/EnemyFactory.s"
 	@echo "... src/object/Player.o"
 	@echo "... src/object/Player.i"
 	@echo "... src/object/Player.s"
+	@echo "... src/object/SpiralEnemy.o"
+	@echo "... src/object/SpiralEnemy.i"
+	@echo "... src/object/SpiralEnemy.s"
+	@echo "... src/object/StraightEnemy.o"
+	@echo "... src/object/StraightEnemy.i"
+	@echo "... src/object/StraightEnemy.s"
 	@echo "... src/scene/EnemySpawner.o"
 	@echo "... src/scene/EnemySpawner.i"
 	@echo "... src/scene/EnemySpawner.s"
@@ -409,6 +513,9 @@ help:
 	@echo "... src/scene/TitleScene.o"
 	@echo "... src/scene/TitleScene.i"
 	@echo "... src/scene/TitleScene.s"
+	@echo "... src/system/StageLoader.o"
+	@echo "... src/system/StageLoader.i"
+	@echo "... src/system/StageLoader.s"
 .PHONY : help
 
 
@@ -420,7 +527,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/yuto/sourse/STG/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -125,10 +125,24 @@ CMakeFiles/STG.dir/src/object/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/object/Enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/object/Enemy.cpp -o CMakeFiles/STG.dir/src/object/Enemy.cpp.s
 
+CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o: CMakeFiles/STG.dir/flags.make
+CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o: ../src/object/EnemyFactory.cpp
+CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o -MF CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o.d -o CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o -c /home/yuto/sourse/STG/src/object/EnemyFactory.cpp
+
+CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuto/sourse/STG/src/object/EnemyFactory.cpp > CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.i
+
+CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/object/EnemyFactory.cpp -o CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.s
+
 CMakeFiles/STG.dir/src/object/Player.cpp.o: CMakeFiles/STG.dir/flags.make
 CMakeFiles/STG.dir/src/object/Player.cpp.o: ../src/object/Player.cpp
 CMakeFiles/STG.dir/src/object/Player.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/STG.dir/src/object/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/STG.dir/src/object/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/object/Player.cpp.o -MF CMakeFiles/STG.dir/src/object/Player.cpp.o.d -o CMakeFiles/STG.dir/src/object/Player.cpp.o -c /home/yuto/sourse/STG/src/object/Player.cpp
 
 CMakeFiles/STG.dir/src/object/Player.cpp.i: cmake_force
@@ -139,10 +153,38 @@ CMakeFiles/STG.dir/src/object/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/object/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/object/Player.cpp -o CMakeFiles/STG.dir/src/object/Player.cpp.s
 
+CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o: CMakeFiles/STG.dir/flags.make
+CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o: ../src/object/SpiralEnemy.cpp
+CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o -MF CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o.d -o CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o -c /home/yuto/sourse/STG/src/object/SpiralEnemy.cpp
+
+CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuto/sourse/STG/src/object/SpiralEnemy.cpp > CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.i
+
+CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/object/SpiralEnemy.cpp -o CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.s
+
+CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o: CMakeFiles/STG.dir/flags.make
+CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o: ../src/object/StraightEnemy.cpp
+CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o -MF CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o.d -o CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o -c /home/yuto/sourse/STG/src/object/StraightEnemy.cpp
+
+CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuto/sourse/STG/src/object/StraightEnemy.cpp > CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.i
+
+CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/object/StraightEnemy.cpp -o CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.s
+
 CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o: CMakeFiles/STG.dir/flags.make
 CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o: ../src/scene/EnemySpawner.cpp
 CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o -MF CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o.d -o CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o -c /home/yuto/sourse/STG/src/scene/EnemySpawner.cpp
 
 CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.s: cmake_force
 CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: CMakeFiles/STG.dir/flags.make
 CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: ../src/scene/GameScene.cpp
 CMakeFiles/STG.dir/src/scene/GameScene.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/STG.dir/src/scene/GameScene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/STG.dir/src/scene/GameScene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/scene/GameScene.cpp.o -MF CMakeFiles/STG.dir/src/scene/GameScene.cpp.o.d -o CMakeFiles/STG.dir/src/scene/GameScene.cpp.o -c /home/yuto/sourse/STG/src/scene/GameScene.cpp
 
 CMakeFiles/STG.dir/src/scene/GameScene.cpp.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/STG.dir/src/scene/GameScene.cpp.s: cmake_force
 CMakeFiles/STG.dir/src/scene/Scene.cpp.o: CMakeFiles/STG.dir/flags.make
 CMakeFiles/STG.dir/src/scene/Scene.cpp.o: ../src/scene/Scene.cpp
 CMakeFiles/STG.dir/src/scene/Scene.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/STG.dir/src/scene/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/STG.dir/src/scene/Scene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/scene/Scene.cpp.o -MF CMakeFiles/STG.dir/src/scene/Scene.cpp.o.d -o CMakeFiles/STG.dir/src/scene/Scene.cpp.o -c /home/yuto/sourse/STG/src/scene/Scene.cpp
 
 CMakeFiles/STG.dir/src/scene/Scene.cpp.i: cmake_force
@@ -184,7 +226,7 @@ CMakeFiles/STG.dir/src/scene/Scene.cpp.s: cmake_force
 CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o: CMakeFiles/STG.dir/flags.make
 CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o: ../src/scene/SceneManager.cpp
 CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o -MF CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o.d -o CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o -c /home/yuto/sourse/STG/src/scene/SceneManager.cpp
 
 CMakeFiles/STG.dir/src/scene/SceneManager.cpp.i: cmake_force
@@ -198,7 +240,7 @@ CMakeFiles/STG.dir/src/scene/SceneManager.cpp.s: cmake_force
 CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o: CMakeFiles/STG.dir/flags.make
 CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o: ../src/scene/TitleScene.cpp
 CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o -MF CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o.d -o CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o -c /home/yuto/sourse/STG/src/scene/TitleScene.cpp
 
 CMakeFiles/STG.dir/src/scene/TitleScene.cpp.i: cmake_force
@@ -209,18 +251,36 @@ CMakeFiles/STG.dir/src/scene/TitleScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/scene/TitleScene.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/scene/TitleScene.cpp -o CMakeFiles/STG.dir/src/scene/TitleScene.cpp.s
 
+CMakeFiles/STG.dir/src/system/StageLoader.cpp.o: CMakeFiles/STG.dir/flags.make
+CMakeFiles/STG.dir/src/system/StageLoader.cpp.o: ../src/system/StageLoader.cpp
+CMakeFiles/STG.dir/src/system/StageLoader.cpp.o: CMakeFiles/STG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/STG.dir/src/system/StageLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/STG.dir/src/system/StageLoader.cpp.o -MF CMakeFiles/STG.dir/src/system/StageLoader.cpp.o.d -o CMakeFiles/STG.dir/src/system/StageLoader.cpp.o -c /home/yuto/sourse/STG/src/system/StageLoader.cpp
+
+CMakeFiles/STG.dir/src/system/StageLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STG.dir/src/system/StageLoader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuto/sourse/STG/src/system/StageLoader.cpp > CMakeFiles/STG.dir/src/system/StageLoader.cpp.i
+
+CMakeFiles/STG.dir/src/system/StageLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STG.dir/src/system/StageLoader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuto/sourse/STG/src/system/StageLoader.cpp -o CMakeFiles/STG.dir/src/system/StageLoader.cpp.s
+
 # Object files for target STG
 STG_OBJECTS = \
 "CMakeFiles/STG.dir/src/core/Application.cpp.o" \
 "CMakeFiles/STG.dir/src/main.cpp.o" \
 "CMakeFiles/STG.dir/src/object/Bullet.cpp.o" \
 "CMakeFiles/STG.dir/src/object/Enemy.cpp.o" \
+"CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o" \
 "CMakeFiles/STG.dir/src/object/Player.cpp.o" \
+"CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o" \
+"CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o" \
 "CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o" \
 "CMakeFiles/STG.dir/src/scene/GameScene.cpp.o" \
 "CMakeFiles/STG.dir/src/scene/Scene.cpp.o" \
 "CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o" \
-"CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o"
+"CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o" \
+"CMakeFiles/STG.dir/src/system/StageLoader.cpp.o"
 
 # External object files for target STG
 STG_EXTERNAL_OBJECTS =
@@ -229,15 +289,19 @@ STG: CMakeFiles/STG.dir/src/core/Application.cpp.o
 STG: CMakeFiles/STG.dir/src/main.cpp.o
 STG: CMakeFiles/STG.dir/src/object/Bullet.cpp.o
 STG: CMakeFiles/STG.dir/src/object/Enemy.cpp.o
+STG: CMakeFiles/STG.dir/src/object/EnemyFactory.cpp.o
 STG: CMakeFiles/STG.dir/src/object/Player.cpp.o
+STG: CMakeFiles/STG.dir/src/object/SpiralEnemy.cpp.o
+STG: CMakeFiles/STG.dir/src/object/StraightEnemy.cpp.o
 STG: CMakeFiles/STG.dir/src/scene/EnemySpawner.cpp.o
 STG: CMakeFiles/STG.dir/src/scene/GameScene.cpp.o
 STG: CMakeFiles/STG.dir/src/scene/Scene.cpp.o
 STG: CMakeFiles/STG.dir/src/scene/SceneManager.cpp.o
 STG: CMakeFiles/STG.dir/src/scene/TitleScene.cpp.o
+STG: CMakeFiles/STG.dir/src/system/StageLoader.cpp.o
 STG: CMakeFiles/STG.dir/build.make
 STG: CMakeFiles/STG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable STG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuto/sourse/STG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable STG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/STG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

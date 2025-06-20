@@ -1,3 +1,4 @@
+#include "scene/SceneManager.hpp" // ← SceneID の定義を使えるようにする
 #include "scene/TitleScene.hpp"
 #include <iostream>
 
@@ -32,10 +33,19 @@ void TitleScene::update(float deltaTime, bool &isRunning)
             }
         }
     }
+
+    if (requestStart && changeSceneCallback)
+    {
+        changeSceneCallback(SceneID::GAME);
+    }
 }
 
 void TitleScene::draw(SDL_Renderer *renderer)
 {
     SDL_SetRenderDrawColor(renderer, 30, 30, 100, 255);
     SDL_RenderClear(renderer);
+
+    // 本来はタイトルロゴや文字も描く予定
+
+    SDL_RenderPresent(renderer); // これを忘れると画面に何も出ない！
 }

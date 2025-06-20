@@ -1,16 +1,21 @@
 #include "scene/GameScene.hpp"
+#include "object/EnemyFactory.hpp"
+
+#include "object/StraightEnemy.hpp" // 追加
 
 GameScene::GameScene()
-    : enemySpawnTimer(0) // ← ここで初期化
+    : enemySpawnTimer(0)
 {
     player = std::make_shared<Player>(400, 500, 5);
 
     spawner.addWave(1.0f, []()
-                    { return std::make_shared<Enemy>(100, -30, 2); });
+                    { return std::make_shared<StraightEnemy>(100, -30, 2); });
+
     spawner.addWave(3.5f, []()
-                    { return std::make_shared<Enemy>(300, -50, 1); });
+                    { return std::make_shared<StraightEnemy>(300, -50, 1); });
+
     spawner.addWave(5.0f, []()
-                    { return std::make_shared<Enemy>(200, -20, 4); });
+                    { return std::make_shared<StraightEnemy>(200, -20, 4); });
 }
 
 void GameScene::onEnter()
@@ -32,41 +37,38 @@ void GameScene::update(float deltaTime, bool &isRunning)
         {
             isRunning = false;
         }
-        if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE)
+        if (event.type == SDL_KEYDOWN)
         {
-            isRunning = false;
+            if (event.key.keysym.sym == SDLK_ESCAPE)
+            {
+                isRunning = false;
+            }
         }
     }
 
-    const Uint8 *keystate = SDL_GetKeyboardState(nullptr);
-    player->handleInput(SDL_GetKeyboardState(nullptr));
-    player->update(1.0f / 60, isRunning);
-    player->removeOffScreenBullets();
+    currentFrame++;
 
-    // 敵の出現タイマー更新
-    enemySpawnTimer--;
-    if (enemySpawnTimer <= 0)
+    for (auto it = spawnTable.begin(); it != spawnTable.end();)
     {
-        int x = rand() % (800 - 32); // ウィンドウ幅を800と仮定
-        enemies.push_back(std::make_shared<Enemy>(x, -32, 2));
-        enemySpawnTimer = 60; // 1秒ごとに出現（60fps想定）
+        if (it->time <= currentFrame)
+        {
+            const auto &spawnData = *it;
+            auto enemy = EnemyFactory::create(spawnData.type, spawnData.x, spawnData.y, spawnData.hp);
+            enemies.push_back(enemy);
+            it = spawnTable.erase(it);
+        }
+        else
+        {
+            ++it;
+        }
     }
 
-    elapsedTime += deltaTime;
-    spawner.update(elapsedTime, enemies);
-
-    // 各敵の更新
     for (auto &enemy : enemies)
     {
-        enemy->update(1.0f / 60, isRunning);
+        enemy->update(deltaTime);
     }
 
-    // 画面外に出た敵を削除
-    enemies.erase(
-        std::remove_if(enemies.begin(), enemies.end(),
-                       [](const std::shared_ptr<Enemy> &e)
-                       { return e->isOffScreen(); }),
-        enemies.end());
+    player->update(deltaTime, isRunning); // プレイヤーの処理も忘れずに
 }
 
 void GameScene::draw(SDL_Renderer *renderer)
@@ -80,4 +82,6 @@ void GameScene::draw(SDL_Renderer *renderer)
     {
         enemy->draw(renderer);
     }
+
+    SDL_RenderPresent(renderer); // これが無いと描画結果が画面に出ません！
 }

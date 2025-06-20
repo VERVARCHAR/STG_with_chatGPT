@@ -1,23 +1,17 @@
-#ifndef ENEMY_HPP
-#define ENEMY_HPP
-
-#include "object/GameObject.hpp"
+#pragma once
 #include <SDL2/SDL.h>
 
-class Enemy : public GameObject
+class Enemy
 {
 public:
-    Enemy(int x, int y, int speed);
+    int x, y, hp;
 
-    void update(float deltaTime, bool &isRunning);
-    void draw(SDL_Renderer *renderer) override;
+    Enemy(int x, int y, int hp) : x(x), y(y), hp(hp) {}
+    virtual ~Enemy() = default;
 
-    bool isOffScreen() const;
-    SDL_Rect getRect() const;
+    virtual void update(float deltaTime) = 0;
+    virtual void draw(SDL_Renderer *renderer) = 0;
 
-private:
-    SDL_Rect rect;
-    int speed;
+    virtual bool isOffScreen() const;
+    virtual SDL_Rect getRect() const;
 };
-
-#endif

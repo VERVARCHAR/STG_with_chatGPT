@@ -22,6 +22,7 @@ public:
 
     void registerScene(SceneID id, std::shared_ptr<Scene> scene);
     std::shared_ptr<Scene> getCurrentScene() const;
+    SceneID getCurrentID() const;
 
 private:
     std::shared_ptr<Scene> currentScene = nullptr;

@@ -1,25 +1,27 @@
 cmake_minimum_required(VERSION 3.10)
 project(STG)
 
-# C++のバージョン設定
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# インクルードディレクトリ（-Iで追加される）
-include_directories(include)
-
-# SDL2を探してリンク
+# SDL2 を探す
 find_package(SDL2 REQUIRED)
-include_directories(${SDL2_INCLUDE_DIRS})
 
-# ソースファイルを再帰的に集める
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
-    src/*.cpp
+# ソースコードをすべて収集
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+
+# 実行ファイルターゲットを作成
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+# インクルードパスの設定
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+    ${SDL2_INCLUDE_DIRS}
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/third_party/json
 )
 
-
-# 実行ファイル生成
-add_executable(STG ${SOURCES})
-
-# SDL2をリンク
-target_link_libraries(STG ${SDL2_LIBRARIES})
+# SDL2ライブラリをリンク
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+    ${SDL2_LIBRARIES}
+)

@@ -2,7 +2,9 @@
 #include "object/Player.hpp"
 #include "scene/Scene.hpp"
 #include "system/Logger.hpp"
+#include "scene/EnemySpawnData.hpp"
 #include "scene/EnemySpawner.hpp"
+#include "object/EnemyFactory.hpp"
 #include <memory>
 #include <time.h>
 
@@ -21,4 +23,6 @@ private:
     int enemySpawnTimer;
     float elapsedTime = 0.0f;
     EnemySpawner spawner;
+    int currentFrame = 0;
+    std::vector<EnemySpawnData> spawnTable;
 };
